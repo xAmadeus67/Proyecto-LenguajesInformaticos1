@@ -4,6 +4,6 @@ Ciudad elegida: Ushuaia
 Pagina por integrante:
     · Johann: index.html
     · Priscila:
-    · Matias:
-    · Scirica:
+    · Matias: contacto.html
+    · Scirica: lugares.html
 
