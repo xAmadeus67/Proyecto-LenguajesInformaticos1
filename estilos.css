@@ -1,0 +1,28 @@
+:root {
+    --colorDeFondo: #bfe8ff;
+    --fuentePrincipal: "Bricolage Grotesque";
+}
+body {
+    display: flexbox;
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-family: var(--fuentePrincipal), sans-serif;
+    font-size: 1rem;
+    line-height: 1.5px;
+    background-color: var(--colorDeFondo);
+}
+div {
+    display: flexbox;
+    max-width: max-content;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0 1rem;
+}
+p {
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+}
