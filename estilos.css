@@ -2,27 +2,71 @@
     --colorDeFondo: #bfe8ff;
     --fuentePrincipal: "Bricolage Grotesque";
 }
+
+* { 
+    box-sizing: border-box; 
+}
+
 body {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     max-width: max-content;
-    margin: 0 auto;
-    padding: 0 1rem;
+    gap: 1rem;
+    margin: 0;
+    padding: 1.5rem;
     font-family: var(--fuentePrincipal), sans-serif;
-    font-size: 1rem;
-    line-height: 1.5px;
+    font-size: 1.2rem;
     background-color: var(--colorDeFondo);
 }
-div {
-    display: flexbox;
-    max-width: max-content;
-    text-align: center;
+
+nav {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: center;
-    margin: auto;
-    padding: 0 1rem;
+    
 }
+
+nav p {
+    width: 31%;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: auto;
+    background-color: yellow;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+}
+
 p {
+    width: auto;
+    background-color: red;
     text-align: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: 1rem;
 }
+
+p a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.imagenDelFaro, img {
+    width: 100%;
+    height: 100%;
+}
+
