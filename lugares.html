@@ -3,25 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
+   
 
     <title>Lugares turisticos</title>
 </head>
 <body>
-    <header>
-        <h1>La historia de ushuaia</h1>
-<h2>Museo del fin del mundo</h2>
-<H3>El Museo del Fin del Mundo es una pieza viva de nuestra historia: además de la conservación de elementos de la historia y la cultura fueguina, 
-    los dos edificios que lo componen son antiguos testigos y piezas fundamentales en el desarrollo de la ciudad.
+    <header> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
 
-El edificio principal ubicado en la Avenida Maipú al 173 se terminó de construir en 1915 
-con la idea de funcionar como vivienda del entonces Secretario de la Gobernación y luego Gobernador Manuel Fernandez Valdés;
- sin embargo, el edificio es conocido por haber funcionado como sede del Banco Nación por más de 60 años. 
-Fue una de las primeras construcciones en piedra, 
-hecha por quienes cumplían su condena en el presidio. En 1999 fue declarado Patrimonio Cultural de la Ciudad de Ushuaia.</H3>
-    </header>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
+        h1 {
+            text-align: center;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .museo {
+            background-color: white;
+            width: 300px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .museo img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .museo h2 {
+            font-size: 21px;
+        }
+
+        .museo p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<header>
+<body>
+
+    <h1>Museos de Ushuaia</h1>
+
+    <div class="contenedor">
+
+        <div class="museo">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/MuseoFinDelMundo.jpg"
+                 alt="Museo del Fin del Mundo">
+
+            <h2>Museo del Fin del Mundo</h2>
+
+            <p>
+                El Museo del Fin del Mundo conserva y muestra parte de la historia
+                y la cultura de Tierra del Fuego. Su sede fundacional se encuentra
+                en Avenida Maipú 173, en un edificio que también funcionó durante
+                décadas como sede del Banco Nación.
+            </p>
+        </div>
+
+
+        <div class="museo">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Museo_Maritimo_y_Ex_Presidio_de_Ushuaia_147.JPG"
+                 alt="Museo Marítimo y ex Presidio de Ushuaia">
+
+            <h2>Museo Marítimo y ex Presidio</h2>
+
+            <p>
+                Funciona en el antiguo edificio del presidio de Ushuaia. Sus salas
+                permiten conocer la historia marítima de la región, las expediciones
+                antárticas y distintos aspectos de la historia del antiguo presidio.
+            </p>
+        </div>
+
+
+        <div class="museo">
+            <!-- Guardá una foto del edificio como "museo-ciudad.jpg" en la misma carpeta -->
+            <img src="museo-ciudad.jpg"
+                 alt="Museo de la Ciudad de Ushuaia">
+
+            <h2>Museo de la Ciudad</h2>
+
+            <p>
+                También conocido como Casa Pena, funciona en una antigua vivienda
+                de madera y chapa. El museo está dedicado a conservar y mostrar
+                recuerdos, objetos y relatos relacionados con los antiguos
+                pobladores y pioneros de Ushuaia.
+            </p>
+        </div>
+
+    </div>
+
 </body>
 </html>
+
