@@ -76,31 +76,40 @@ body {
     flex-direction: column;
     width: 100%;
     line-height: 1.5;
-    padding: 1% 2%;
+    padding: 2%;
+    margin-bottom: 1.5%;
 }
 
-article {
+.articulo {
     display: flex;
     flex-direction: column;
+    padding: 1%;
 }
 
 p {
     width: auto;
     text-align: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
-h1, h2 {
+.aMain, .aFooter {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
     text-align: center;
 }
 
-.imagenDelFaro, img {
-    width: 100%;
-    height: 100%;
+.imagenDelFaro {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 1%;
+    border: 2px solid var(--colorDeBordeHeader);
 }
 
 
-/* Pagina lugares */
+/* diseño de pagina lugares */
 
 .contenedor {
     display: flex;
