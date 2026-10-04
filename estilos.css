@@ -1,54 +1,82 @@
 :root {
     --colorDeFondo: #bfe8ff;
+    --colorDeHeader: #03486f;
+    --colorDeBordeHeader: #011824;
     --fuentePrincipal: "Bricolage Grotesque";
 }
 
 * { 
-    box-sizing: border-box; 
-}
-
-body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
     font-family: var(--fuentePrincipal), sans-serif;
-    font-size: 1.2rem;
-    background-color: var(--colorDeFondo);
 }
-.index {
+body {
+    background-color: var(--colorDeFondo);
+    font-size: 1.2rem;
+}
+.headerInicio {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 18%;
-    position: fixed;
-    text-align: center; 
-    background-color: #0c96e6;
+    margin-bottom: 1.5%;
+    padding: 1% 3%;
+    gap: 10%;
+    background-color:var(--colorDeHeader);
+    border-bottom: 3px solid var(--colorDeBordeHeader);
 }
 .logo {
-    width: 60%;
-    height: 100%;
-    padding: 1rem;
+    display: block;
+    width: 60px;
 }
-.contenedorSecundario {
-    width: 20%;
-}
-.contenedorPrincipal {
-    width: 60%;
-    padding: 0.5rem;
-}
-
-nav {
+.barraDeNav {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
     justify-content: center;
-    
+    gap: 15%;
+    font-size: 1.2em;
+    list-style: none;
+}
+.barraDeNav a {
+    text-decoration: none;
+    color: var(--colorDeFondo);
+    position: relative;
+
+}
+.barraDeNav a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    background-color: var(--colorDeFondo);
+    position: absolute;
+    bottom: 1%;
+    transition: 0.3s;
+}
+.barraDeNav a:hover::after {
+    width: 100%;
+}
+.logoRegistro {
+    display: block;
+    width: 30px;
+}
+.botonDeRegistro {
+    border-radius: 30px;
+    padding: 0;
+    text-decoration: none;
+    color: var(--colorDeFondo);
+}
+.logo:hover, .logoRegistro:hover {
+    transform: scale(1.2);
 }
 
-main {
+.mainInicio {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: auto;
+    line-height: 1.5;
+    padding: 1% 2%;
 }
 
 article {
@@ -60,12 +88,6 @@ p {
     width: auto;
     text-align: center;
     justify-content: center;
-    
-}
-
-p a {
-    text-decoration: none;
-    color: black;
 }
 
 h1, h2 {
