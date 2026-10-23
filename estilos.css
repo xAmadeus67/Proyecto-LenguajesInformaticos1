@@ -102,7 +102,7 @@ h1 {
 }
 
 .imagenDelFaro {
-    width: 50%;
+    width:70%;
     height: 50%;
     margin-bottom: 1%;
     border: 2px solid var(--colorDeBordeHeader);
