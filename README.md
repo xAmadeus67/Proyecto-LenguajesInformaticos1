@@ -4,8 +4,7 @@ En resumen mas detallado:
 - Proyecto grupal valorado como nota de segundo parcial
 - Pagina web sobre un sitio turistico en este caso elegimos: *Ushuaia*
 - Division de responsabilidades pagina por integrante:
-    *· Johann: index.html*
-    *· Priscila:*
+    *· Johann: index.html y ciudad.html*
     *· Matias: contacto.html*
     *· Scirica: lugares.html*
 
