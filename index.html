@@ -43,43 +43,40 @@
                 </p>
             </article>
         </section>
-        <aside class="asideInicio">
-
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/pinguinos.webp" alt="Los Angeles" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/pinguinos.webp" alt="Chicago" class="d-block w-100">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/parqueNacional.jpg" alt="New York" class="d-block w-100">
-    </div>
-  </div>
-
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-            <p><a class="aMain" href="lugares.html" target="_blank" rel="noopener noreferrer">Todo lo que tenes que saber de nuestros sitios turisticos y las mejores fechas para visitarlos</a></p>
-            <p><a class="aMain" href="ciudad.html" target="_blank" rel="noopener noreferrer">Viaja conociendo parte de nuestra historia</a></p>
-        </aside>
+        
+        <section class="seccionTarjetas" aria-labelledby="tituloTarjetas">
+            <div class="row row-cols-3 g-2 g-md-4">
+                <article class="col">
+                    <div class="card h-100 tarjetaInicio">
+                        <img src="imagenes/carrusel-historia.svg" class="card-img-top" alt="Faro Les Éclaireurs al atardecer, barco antiguo y Tren del Fin del Mundo en Ushuaia">
+                        <div class="card-body">
+                            <h3 class="card-title h5"><a class="stretched-link aTarjeta" href="ciudad.html">Historia</a></h3>
+                            <p class="card-text">Conocé cómo nació la ciudad, desde los pueblos originarios hasta el presidio y el tren del fin del mundo.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100 tarjetaInicio">
+                        <img src="imagenes/carrusel-lugares.svg" class="card-img-top" alt="Parque Nacional Tierra del Fuego: montañas nevadas, glaciar, bosque de lengas en otoño, lago y pingüinos">
+                        <div class="card-body">
+                            <h3 class="card-title h5"><a class="stretched-link aTarjeta" href="lugares.html">Lugares</a></h3>
+                            <p class="card-text">Glaciares, bosques, lagos y pingüinos: descubrí los sitios turísticos y las mejores fechas para visitarlos.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col">
+                    <div class="card h-100 tarjetaInicio">
+                        <img src="imagenes/carrusel-contacto.svg" class="card-img-top" alt="Cartel de madera del Fin del Mundo en Ushuaia con flechas: escribinos, llamanos y visitanos">
+                        <div class="card-body">
+                            <h3 class="card-title h5"><a class="stretched-link aTarjeta" href="contacto.html">Contacto</a></h3>
+                            <p class="card-text">Escribinos, llamanos o visitanos para planificar tu viaje y resolver todas tus dudas.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p><a class="aFooter" href="contacto.html" target="_blank" rel="noopener noreferrer">Contactanos</a> y sacate todas tus dudas</p>
+    <footer class="piePagina">
+        <p><a href="contacto.html" target="_blank" rel="noopener noreferrer">Contactanos</a></p>
     </footer>
 </body>

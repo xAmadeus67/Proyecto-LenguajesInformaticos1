@@ -2,19 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="historia de ushuaia" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Historia y población de Ushuaia, la ciudad más austral del mundo.">
     <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imagenes/iconoUshuaia.png" type="image/x-icon">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
 
     <title>Nuestra historia</title>
 </head>
-<body>
+<body class="ciudad">
     <header class="headerInicio">
         <a href="index.html"><img src="imagenes/iconoUshuaia.png" class="logo" alt="logo de ushuaia"></a>
         <nav>
@@ -26,31 +27,118 @@
         </nav>
         <a href="#" class="botonDeRegistro"><img src="imagenes/iconoUsuario.png" class="logoRegistro" alt="icono de usuario"></a> 
     </header>
-    <main>
-        <div id="carouselExampleFade" class="carousel carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/parqueNacional.jpg" class="d-block w-100 rounded-5" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/pinguinos.webp" class="d-block w-100 rounded-5" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="imagenes/ciudadDesdeElMar.avif" class="d-block w-100 rounded-5" alt="...">
-    </div>
-  </div>
-  <div>
-    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-icon-prev" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-icon-next" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</div>
+
+    <main class="principalCiudad">
+        <section class="presentacionCiudad">
+            <h1>Ushuaia, la ciudad del fin del mundo</h1>
+            <p>
+                Capital de la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur,
+                Ushuaia se ubica entre la cordillera Martial y el canal Beagle. Es la ciudad más austral del planeta.
+            </p>
+        </section>
+
+        <section class="galeriaCiudad" aria-label="Galería de imágenes de Ushuaia">
+            <div id="carruselCiudad" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselCiudad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1: Parque Nacional"></button>
+                    <button type="button" data-bs-target="#carruselCiudad" data-bs-slide-to="1" aria-label="Imagen 2: Pingüinos"></button>
+                    <button type="button" data-bs-target="#carruselCiudad" data-bs-slide-to="2" aria-label="Imagen 3: Ciudad desde el mar"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <figure class="carousel-item active">
+                        <img src="imagenes/parqueNacional.jpg" class="d-block w-100" alt="Paisaje de montañas, bosque y lago en el Parque Nacional Tierra del Fuego">
+                        <figcaption class="descripcionImagen">
+                            El Parque Nacional Tierra del Fuego, a pocos kilómetros de la ciudad, protege bosques
+                            australes, lagos y montañas. Fue creado en 1960 y es el único parque nacional argentino con costa marina.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-item">
+                        <img src="imagenes/pinguinos.webp" class="d-block w-100" alt="Grupo de pingüinos caminando sobre la costa del canal Beagle">
+                        <figcaption class="descripcionImagen">
+                            Los pingüinos llegan cada primavera a las islas del canal Beagle para reproducirse.
+                            Desde Ushuaia se organizan navegaciones para observarlos de cerca.
+                        </figcaption>
+                    </figure>
+
+                    <figure class="carousel-item">
+                        <img src="imagenes/ciudadDesdeElMar.avif" class="d-block w-100" alt="Vista de la ciudad de Ushuaia desde el canal Beagle, con las montañas nevadas detrás">
+                        <figcaption class="descripcionImagen">
+                            Así se ve Ushuaia desde el canal Beagle: una ciudad de puerto que crece entre
+                            el mar y las montañas, y que funciona como punto de partida hacia la Antártida.
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselCiudad" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Imagen anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselCiudad" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Imagen siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="seccionHistoria">
+            <h2>Un poco de historia</h2>
+            <article>
+                <p>
+                    Mucho antes de la llegada de los europeos, la región estaba habitada por pueblos originarios.
+                    En la zona del canal Beagle vivían los yámanas (o yaganes), navegantes y cazadores-recolectores
+                    adaptados al frío y al mar. El nombre «Ushuaia» proviene de su lengua y suele traducirse como
+                    «bahía que penetra hacia el poniente».
+                </p>
+                <p>
+                    En 1869 el misionero anglicano Thomas Bridges se instaló en la bahía y fundó una misión.
+                    Años después, el 12 de octubre de 1884, el marino argentino Augusto Lasserre izó la bandera
+                    nacional y se estableció allí la subprefectura, hito que se toma como fecha de fundación de la ciudad.
+                </p>
+                <p>
+                    Desde comienzos del siglo XX, Ushuaia se hizo conocida por el presidio, una cárcel que
+                    funcionó hasta 1947. Los presos trabajaron en la tala de bosques, la construcción de edificios y el tren
+                    que transportaba la madera, lo que ayudó a poblar y desarrollar el lugar. Hoy el antiguo presidio funciona como museo.
+                </p>
+            </article>
+
+            <ol class="lineaDeTiempo">
+                <li><strong>1869:</strong> se instala la misión anglicana de Thomas Bridges.</li>
+                <li><strong>1884:</strong> Augusto Lasserre funda oficialmente la ciudad.</li>
+                <li><strong>1902:</strong> se crea la cárcel de reincidentes, que funciona hasta 1947.</li>
+                <li><strong>1972:</strong> el régimen de promoción industrial impulsa la llegada de nuevos habitantes.</li>
+                <li><strong>1992:</strong> Tierra del Fuego se convierte en provincia y Ushuaia, en su capital.</li>
+            </ol>
+        </section>
+
+        <section class="seccionPoblacion">
+            <h2>Su población</h2>
+            <article>
+                <p>
+                    Durante gran parte del siglo XX Ushuaia fue un pueblo pequeño. El gran cambio llegó en la década
+                    de 1970, cuando un régimen de promoción industrial atrajo fábricas y trabajadores de otras provincias
+                    argentinas y de países vecinos. En pocas décadas la ciudad multiplicó su población.
+                </p>
+                <p>
+                    Según el censo de 2010, vivían en Ushuaia alrededor de 57.000 personas, y el censo de 2022 mostró
+                    que la cifra superó los 80.000 habitantes. Hoy la economía combina la industria electrónica,
+                    la pesca y, sobre todo, el turismo, que recibe visitantes de todo el mundo durante el año.
+                </p>
+            </article>
+
+            <aside class="datoDestacado">
+                <p>
+                    <strong>Dato curioso:</strong> la mayoría de sus habitantes no nació en la ciudad.
+                    Ushuaia se formó con la llegada de personas de todo el país y del exterior, por eso
+                    se la considera una ciudad de inmigrantes.
+                </p>
+            </aside>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer class="piePagina">
+        <p>Ushuaia, Tierra del Fuego, Argentina</p>
+    </footer>
 </body>
 </html>
