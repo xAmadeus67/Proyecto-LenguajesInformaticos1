@@ -3,6 +3,22 @@
     --colorDeHeader: #03486f;
     --colorDeBordeHeader: #011824;
     --fuentePrincipal: "Bricolage Grotesque";
+
+    /* Variables que cambian con el modo oscuro */
+    --fondoPagina: var(--colorDeFondo);
+    --textoPagina: #212529;
+    --colorTitulos: var(--colorDeHeader);
+    --fondoClaro: #ffffff;
+    --bordeSuave: #cccccc;
+}
+
+[data-bs-theme="dark"] {
+    --fondoPagina: #07202e;
+    --textoPagina: #dff2ff;
+    --colorTitulos: #7cc8f2;
+    --fondoClaro: #0e3247;
+    --bordeSuave: #1f5b80;
+    --colorDeBordeHeader: #0b6a9c;
 }
 
 * { 
@@ -12,50 +28,90 @@
     font-family: var(--fuentePrincipal), sans-serif;
 }
 body,.ciudad {
-    background-color: var(--colorDeFondo);
+    background-color: var(--fondoPagina);
+    color: var(--textoPagina);
     font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 .headerInicio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
     margin-bottom: 1.5%;
     padding: 1% 3%;
-    gap: 10%;
-    background-color:var(--colorDeHeader);
+    background-color: var(--colorDeHeader);
     border-bottom: 3px solid var(--colorDeBordeHeader);
 }
 .logo {
     display: block;
     width: 60px;
 }
+.nombreCiudad {
+    color: var(--colorDeFondo);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.navbar-toggler {
+    border-color: var(--colorDeFondo);
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(191, 232, 255, 0.4);
+}
 .barraDeNav {
+    font-size: 1.2em;
+    gap: 0;
+}
+.barraDeNav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0;
+    color: var(--colorDeFondo);
+}
+.barraDeNav .nav-link:hover,
+.barraDeNav .nav-link:focus {
+    color: var(--colorDeFondo);
+}
+.barraDeNav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--colorDeFondo);
+    transition: 0.3s;
+}
+.barraDeNav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Escritorio: separación entre links */
+@media (min-width: 768px) {
+    .barraDeNav { gap: 3rem; }
+}
+
+/* Móvil: menú desplegado ordenado */
+@media (max-width: 767.98px) {
+    .barraDeNav { padding: 0.75rem 0; text-align: center; }
+}
+.btnTema {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15%;
-    font-size: 1.2em;
-    list-style: none;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 1px solid var(--colorDeFondo);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
-.barraDeNav a {
-    text-decoration: none;
-    color: var(--colorDeFondo);
-    position: relative;
-
+.btnTema:hover {
+    transform: scale(1.1);
+    background-color: rgba(191, 232, 255, 0.15);
 }
-.barraDeNav a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    left: 0;
-    background-color: var(--colorDeFondo);
-    position: absolute;
-    bottom: 1%;
-    transition: 0.3s;
-}
-.barraDeNav a:hover::after {
-    width: 100%;
+.btnTema:focus-visible {
+    outline: 3px solid var(--colorDeFondo);
+    outline-offset: 3px;
 }
 .logoRegistro {
     display: block;
@@ -109,7 +165,7 @@ h1 {
 .seccionTarjetas h2 {
     margin-bottom: 1.5rem;
     text-align: center;
-    color: var(--colorDeHeader);
+    color: var(--colorTitulos);
 }
 
 .tarjetaInicio {
@@ -119,7 +175,7 @@ h1 {
     border-radius: 1rem;
     color: var(--colorDeFondo);
     transition: transform 0.3s;
-    margin: 1%;
+    margin: 0;
 }
 
 .tarjetaInicio:hover {
@@ -147,17 +203,6 @@ h1 {
     outline-offset: 4px;
 }
 
-@media (max-width: 576px) {
-    .tarjetaInicio .card-body {
-        padding: 0.5rem;
-    }
-
-    .tarjetaInicio .card-text {
-        font-size: 0.75rem;
-        line-height: 1.3;
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     .tarjetaInicio {
         transition: none;
@@ -177,10 +222,10 @@ h1 {
 }
 
 .museo {
-    background-color: white;
+    background-color: var(--fondoClaro);
     width: 300px;
     padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--bordeSuave);
     border-radius: 8px;
 }
 
@@ -258,7 +303,7 @@ h1 {
 }
 
 .galeriaCiudad .carousel-indicators button {
-    background-color: var(--colorDeHeader);
+    background-color: var(--colorTitulos);
 }
 
 .seccionHistoria,
@@ -269,7 +314,7 @@ h1 {
 .seccionHistoria h2,
 .seccionPoblacion h2 {
     margin-bottom: 1rem;
-    color: var(--colorDeHeader);
+    color: var(--colorTitulos);
     font-size: 1.8rem;
 }
 
@@ -283,7 +328,7 @@ h1 {
 .lineaDeTiempo {
     list-style: none;
     margin: 1.5rem 0;
-    border-left: 4px solid var(--colorDeHeader);
+    border-left: 4px solid var(--colorTitulos);
 }
 
 .lineaDeTiempo li {
@@ -291,15 +336,15 @@ h1 {
 }
 
 .lineaDeTiempo strong {
-    color: var(--colorDeHeader);
+    color: var(--colorTitulos);
 }
 
 .datoDestacado {
     max-width: 70ch;
     margin-top: 1.5rem;
     padding: 1.2rem 1.5rem;
-    background-color: white;
-    border-left: 6px solid var(--colorDeHeader);
+    background-color: var(--fondoClaro);
+    border-left: 6px solid var(--colorTitulos);
     border-radius: 0 8px 8px 0;
 }
 
