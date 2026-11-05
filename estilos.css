@@ -213,7 +213,7 @@ h1 {
 
 /* diseño de pagina lugares */
 
-.contenedor {
+.contenedor-azul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -375,4 +375,35 @@ h1 {
     .descripcionImagen {
         padding: 0 0.5rem;
     }
+}
+.contenedor-verde {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.naturaleza {
+    background-color: var(--fondoClaro);
+    width: 300px;
+    padding: 15px;
+    border: 1px solid var(--bordeSuave);
+    border-radius: 8px;
+}
+
+.naturaleza img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.naturaleza h2 {
+    font-size: 21px;
+}
+
+.naturaleza p {
+    line-height: 1.5;
+}
 }
