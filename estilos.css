@@ -369,7 +369,7 @@ h1 {
     border-top: 3px solid var(--colorDeBordeHeader);
     color: var(--colorDeFondo);
     text-align: center;
-    font-size: 1,5rem;
+    font-size: 1.5rem;
 }
 .piePagina a {
     text-decoration: none;
@@ -419,29 +419,30 @@ h1 {
 }
 
 /* Página de contacto */
-main {
+.paginaContacto main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1.25rem;
+
 }
 
-main > h1 {
+.paginaContacto main > h1 {
     margin-bottom: 1rem;
     color: var(--colorTitulos);
 }
 
-main > p {
+.paginaContacto main > p {
     max-width: 65ch;
     margin: 0 auto 1rem;
 }
 
-main > p a,
+.paginaContacto main > p a,
 address a {
     color: var(--colorTitulos);
     font-weight: 700;
 }
 
-main section {
+.paginaContacto main section {
     margin: 2rem 0;
     padding: 1.5rem;
     background-color: var(--fondoClaro);
@@ -449,7 +450,7 @@ main section {
     border-radius: 12px;
 }
 
-main section h2 {
+.paginaContacto main section h2 {
     margin-bottom: 1rem;
     color: var(--colorTitulos);
     text-align: center;
