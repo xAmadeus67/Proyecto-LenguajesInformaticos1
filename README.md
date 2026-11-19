@@ -14,7 +14,7 @@
 
 ## Sobre el proyecto
 
-Este sitio presenta Ushuaia, la capital de Tierra del Fuego, ubicada entre la cordillera Martial y el canal Beagle. Reúne en un solo lugar su historia, sus museos, sus paisajes y la información necesaria para planificar una visita.
+Este sitio muestra a Ushuaia, la capital de Tierra del Fuego, ubicada muy al sur de argentina. Reúne en un solo lugar su historia, sus museos, sus paisajes y la información necesaria para planificar una visita.
 
 Fue realizado como proyecto grupal de la materia **Lenguajes Informáticos I**.
 
@@ -70,7 +70,7 @@ Los datos de la Oficina de Turismo de Ushuaia: dirección, teléfono, correo ele
 
 ## Pensado para todos
 
-El sitio se adapta a computadoras, tablets y celulares, y permite elegir entre modo claro y modo oscuro según la preferencia de cada persona.
+El sitio se adapta a computadoras, tablets y celulares, y permite elegir entre modo claro y modo oscuro según la preferencia de cada persona. Cumpliendo con los requisitos minimos solicitados para el proyecto, diseño resposive y uso de funciones sencillas de JS
 
 ---
 
@@ -79,5 +79,4 @@ El sitio se adapta a computadoras, tablets y celulares, y permite elegir entre m
 | Integrante | Parte del sitio |
 |---|---|
 | **Johann** | Inicio e Historia |
-| **Matías** | Contacto |
-| **Scirica** | Lugares |
+| **Scirica** | Lugares y Contacto |
