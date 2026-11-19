@@ -386,6 +386,7 @@ h1 {
     .descripcionImagen {
         padding: 0 0.5rem;
     }
+/*estilos para naturaleza en lugares*/
 }
 .contenedor-verde {
     display: flex;
@@ -409,7 +410,6 @@ h1 {
     object-fit: cover;
     border-radius: 5px;
 }
-
 .naturaleza h2 {
     font-size: 21px;
 }
@@ -417,4 +417,67 @@ h1 {
 .naturaleza p {
     line-height: 1.5;
 }
+
+/* Página de contacto */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+}
+
+main > h1 {
+    margin-bottom: 1rem;
+    color: var(--colorTitulos);
+}
+
+main > p {
+    max-width: 65ch;
+    margin: 0 auto 1rem;
+}
+
+main > p a,
+address a {
+    color: var(--colorTitulos);
+    font-weight: 700;
+}
+
+main section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: var(--fondoClaro);
+    border: 2px solid var(--bordeSuave);
+    border-radius: 12px;
+}
+
+main section h2 {
+    margin-bottom: 1rem;
+    color: var(--colorTitulos);
+    text-align: center;
+}
+
+address p {
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--colorDeHeader);
+    border-top: 3px solid var(--colorDeBordeHeader);
+    color: var(--colorDeFondo);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 1rem auto;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+}
+
 
