@@ -4,13 +4,16 @@
     --colorDeBordeHeader: #011824;
     --fuentePrincipal: "Bricolage Grotesque";
 
-    /* Variables que cambian con el modo oscuro */
+/* Variables que cambian con el modo oscuro */
+
     --fondoPagina: var(--colorDeFondo);
     --textoPagina: #212529;
     --colorTitulos: var(--colorDeHeader);
     --fondoClaro: #ffffff;
     --bordeSuave: #cccccc;
 }
+
+/*paleta de colores al efectuar la funcion de cambiar el tema*/
 
 [data-bs-theme="dark"] {
     --fondoPagina: #07202e;
@@ -21,12 +24,17 @@
     --colorDeBordeHeader: #0b6a9c;
 }
 
+/*suelen hacerse por defecto para un mejor diseño resposivo*/
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: var(--fuentePrincipal), sans-serif;
 }
+
+/*diseño de pagina index*/
+
 body,.ciudad {
     background-color: var(--fondoPagina);
     color: var(--textoPagina);
@@ -54,6 +62,9 @@ body,.ciudad {
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.2rem rgba(191, 232, 255, 0.4);
 }
+
+/*diseño de barra de navegacion*/
+
 .barraDeNav {
     font-size: 1.2em;
     gap: 0;
@@ -82,15 +93,20 @@ body,.ciudad {
     width: 100%;
 }
 
-/* Escritorio: separación entre links */
+/*en caso de pobrar pantallas al achicar se modifico y al agrandar por encima de este min-width realiza el gap */
+
 @media (min-width: 768px) {
     .barraDeNav { gap: 3rem; }
 }
 
-/* Móvil: menú desplegado ordenado */
+/*si la pantalla mide menos del max-width se aplica el nuevo diseño a la barra de navegacion*/
+
 @media (max-width: 767.98px) {
     .barraDeNav { padding: 0.75rem 0; text-align: center; }
 }
+
+/*diseño de funcion de cambiar de tema*/
+
 .btnTema {
     display: flex;
     align-items: center;
@@ -203,13 +219,6 @@ h1 {
     outline-offset: 4px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .tarjetaInicio {
-        transition: none;
-    }
-}
-
-
 
 /* diseño de pagina lugares */
 
@@ -282,6 +291,8 @@ h1 {
     text-align: center;
     font-size: 1rem;
 }
+
+/*achicamos el carrousel para no estar retocando las imagenes*/
 
 .galeriaCiudad .carousel-control-prev,
 .galeriaCiudad .carousel-control-next {

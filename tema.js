@@ -1,11 +1,12 @@
 
 // funcion para cambiar el tono de la pantalla
+
 (function () {
-    var raiz = document.documentElement;
+    var raiz = document.documentElement; //llama al atributo <html>
 
     function actualizarBoton(tema) {
-        var oscuro = tema === 'dark';
-        var boton = document.getElementById('btnTema');
+        var oscuro = tema === 'dark'; 
+        var boton = document.getElementById('btnTema'); 
         boton.querySelector('.iconoTema').textContent = oscuro ? '☀️' : '🌙';
         boton.setAttribute('aria-label', oscuro ? 'Activar modo claro' : 'Activar modo oscuro');
     }
