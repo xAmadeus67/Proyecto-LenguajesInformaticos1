@@ -419,16 +419,19 @@ h1 {
 }
 
 /* Página de contacto */
+
+/* ESTILOS DE LA PAGINA CONTACTO */
+
 .paginaContacto main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1.25rem;
-
 }
 
 .paginaContacto main > h1 {
     margin-bottom: 1rem;
     color: var(--colorTitulos);
+    text-align: center;
 }
 
 .paginaContacto main > p {
@@ -437,7 +440,7 @@ h1 {
 }
 
 .paginaContacto main > p a,
-address a {
+.paginaContacto address a {
     color: var(--colorTitulos);
     font-weight: 700;
 }
@@ -456,29 +459,28 @@ address a {
     text-align: center;
 }
 
-address p {
+.paginaContacto address p {
     margin-bottom: 0.75rem;
 }
 
-footer {
+.paginaContacto footer {
     padding: 1.5rem;
     background-color: var(--colorDeHeader);
     border-top: 3px solid var(--colorDeBordeHeader);
     color: var(--colorDeFondo);
 }
 
-footer p {
+.paginaContacto footer p {
     margin: 0;
 }
 
 @media (max-width: 600px) {
-    main {
+    .paginaContacto main {
         margin: 1rem auto;
     }
 
-    main section {
+    .paginaContacto main section {
         padding: 1rem;
     }
 }
-
 
